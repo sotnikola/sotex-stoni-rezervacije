@@ -27,9 +27,10 @@ jobs:
     - name: Run Python Script
       run: IN_CI=1 python reserver.py ${{ github.event.inputs.start }} ${{ github.actor }} '${{ github.event.inputs.players }}'
       
-    - name: Commit & Push changes
-      uses: actions-js/push@master
+    - name: Push to repo
+      uses: CasperWA/push-protected@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        message: 	'chore: reserve by ${{ github.actor }}'
+        token: ${{ secrets.PUSH_SECRET }}
+        branch: main
+        unprotect_reviews: true
 

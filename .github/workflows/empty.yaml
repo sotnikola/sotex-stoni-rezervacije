@@ -20,8 +20,9 @@ jobs:
     - name: Run Python Script
       run: IN_CI=1 python refresh.py --empty
       
-    - name: Commit & Push changes
-      uses: actions-js/push@master
+    - name: Push to repo
+      uses: CasperWA/push-protected@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        message: 'chore: empty reservations'
+        token: ${{ secrets.PUSH_SECRET }}
+        branch: main
+        unprotect_reviews: true

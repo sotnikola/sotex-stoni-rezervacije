@@ -2,7 +2,7 @@ name: Refresh job
 
 on:
   schedule:
-    - cron: '1,6,11,16,21,26,31,36,41,46,51,56 6-15 * * *'
+    - cron: '1,6,11,16,21,26,31,36,41,46,51,56 6-21 * * *'
 
 jobs:
   run-script:
@@ -20,8 +20,9 @@ jobs:
     - name: Run Python Script
       run: IN_CI=1 python refresher.py
       
-    - name: Commit & Push changes
-      uses: actions-js/push@master
+    - name: Push to repo
+      uses: CasperWA/push-protected@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        message: 'chore: empty'
+        token: ${{ secrets.PUSH_SECRET }}
+        branch: main
+        unprotect_reviews: true
