@@ -1,4 +1,4 @@
-name: Refresh script
+name: Empty job
 
 on:
   schedule:
@@ -23,5 +23,5 @@ jobs:
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
-        github_token: ${{ secrets.BOT_SECRET }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         message: 'chore: empty reservations'
