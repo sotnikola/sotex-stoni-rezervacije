@@ -17,4 +17,4 @@
             <td>Neki igraci</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 15:32</h3>
+<h3>Poslednji put osveženo: 15:35</h3>
