@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "start": "12:00",
+        "end": "12:30",
+        "committer": "sotnikola",
+        "players": "Neki igraci"
+    }
+]

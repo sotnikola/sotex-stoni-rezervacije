@@ -12,6 +12,11 @@
         <th>Commiter</th>
         <th>Igrači</th>
     </thead>
-    <tbody></tbody>
+    <tbody><tr>
+            <td>12:00:00</td>
+            <td>12:30:00</td>
+            <td>sotnikola</td>
+            <td>Neki igraci</td>
+        </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 17:06</h3>
+<h3>Poslednji put osveženo: 15:22</h3>
