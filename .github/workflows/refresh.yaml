@@ -2,11 +2,11 @@ name: Refresh job
 
 on:
   schedule:
-    - cron: '1,6,11,16,21,26,31,36,41,46,51,56 6-21 * * *'
+    - cron: '1,6,11,16,21,26,31,36,41,46,51,56 6-19 * * *'
 
 jobs:
   run-script:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -20,9 +20,8 @@ jobs:
     - name: Run Python Script
       run: IN_CI=1 python refresher.py
       
-    - name: Push to repo
-      uses: CasperWA/push-protected@v2
+    - name: Commit & Push changes
+      uses: actions-js/push@master
       with:
-        token: ${{ secrets.PUSH_SECRET }}
-        branch: main
-        unprotect_reviews: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        message: 'chore: refresh'
