@@ -1,4 +1,4 @@
-name: Empty job
+name: empty-job
 
 on:
   schedule:

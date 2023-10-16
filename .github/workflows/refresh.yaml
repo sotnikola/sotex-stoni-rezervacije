@@ -1,4 +1,4 @@
-name: Refresh job
+name: refresh-job
 
 on:
   workflow_dispatch:
