@@ -1,0 +1,35 @@
+name: Reserve script
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: 'Vreme za koje rezervisete. Proverite u README.md koja su slobodna vremena. Format: HH:MM'
+        required: true
+      players:
+        description: 'Igraci koji ce igrati ili neka poruka'
+        required: false
+        default: 'Neki igraci'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Check out the code from the repository
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Choose your desired Python version
+
+    - name: Run Python Script
+      run: python reserver.py ${{ github.event.inputs.start }} ${{ github.actor }} ${{ github.event.inputs.players }}
+      
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.BOT_SECRET }}
+        message: 	'chore: reserve by ${{ github.actor }}'
+
