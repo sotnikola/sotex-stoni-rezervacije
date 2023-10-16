@@ -1,7 +1,7 @@
 import logging
 import json
-from datetime import datetime
-import subprocess
+from datetime import datetime, timedelta
+import os
 
 TIME_FORMAT = "%H:%M"
 
@@ -36,7 +36,7 @@ def get_entry(reservation):
 """.strip()
 
 def create_readme(reservations):
-    current_time = datetime.now().time()
+    current_time = get_current_time()
     currently_occupied = any([is_overlap((reservation['start'], reservation['end']), (current_time, current_time)) for reservation in reservations])
     return f"""
 <h1>Stoni tenis SOTEX rezervacije</h1>
@@ -54,6 +54,20 @@ def create_readme(reservations):
 </table>
 <h3>Poslednji put osveženo: {current_time.strftime(TIME_FORMAT)}</h3>
 """
+
+def get_current_time():
+    in_ci = "IN_CI"
+    value = "0"
+    if in_ci in os.environ:
+        value = os.getenv(in_ci)
+
+    current_time = datetime.now().time()
+    if value == "0":
+        return current_time
+    
+    srb_time = timedelta(hours=2)
+    return (datetime.combine(datetime.min, current_time) + srb_time).time()
+
 
 def get_checkmark():
     return """<img src="assets/checkmark.png" height="48px" />"""

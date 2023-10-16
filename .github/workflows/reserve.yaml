@@ -25,7 +25,7 @@ jobs:
         python-version: 3.8  # Choose your desired Python version
 
     - name: Run Python Script
-      run: python reserver.py ${{ github.event.inputs.start }} ${{ github.actor }} '${{ github.event.inputs.players }}'
+      run: IN_CI=1 python reserver.py ${{ github.event.inputs.start }} ${{ github.actor }} '${{ github.event.inputs.players }}'
       
     - name: Commit & Push changes
       uses: actions-js/push@master
