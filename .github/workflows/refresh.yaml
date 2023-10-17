@@ -17,7 +17,7 @@ jobs:
         python-version: 3.8  # Choose your desired Python version
 
     - name: Run Python Script
-      run: IN_CI=1 python refresher.py
+      run: python refresher.py
       
     - name: Commit & Push changes
       uses: actions-js/push@master
