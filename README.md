@@ -20,6 +20,11 @@
             <td>08:30:00</td>
             <td>sotnikola</td>
             <td>Mili, Neca</td>
+        </tr><tr>
+            <td>16:00:00</td>
+            <td>16:30:00</td>
+            <td>sotnikola</td>
+            <td>Mili, Swelja</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 08:11</h3>
+<h3>Poslednji put osveženo: 08:16</h3>
