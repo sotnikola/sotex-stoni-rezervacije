@@ -12,4 +12,4 @@
     </thead>
     <tbody></tbody>
 </table>
-<h3>Poslednji put osveženo: 09:05</h3>
+<h3>Poslednji put osveženo: 09:08</h3>
