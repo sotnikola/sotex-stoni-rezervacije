@@ -10,6 +10,11 @@
         <th>Commiter</th>
         <th>Igrači</th>
     </thead>
-    <tbody></tbody>
+    <tbody><tr>
+            <td>08:00:00</td>
+            <td>08:30:00</td>
+            <td>sotnikola</td>
+            <td>Mili, Neca</td>
+        </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 07:31</h3>
+<h3>Poslednji put osveženo: 07:32</h3>
