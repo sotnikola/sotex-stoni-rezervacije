@@ -37,4 +37,4 @@
             <td>Mili, Swelja</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 14:22</h3>
+<h3>Poslednji put osveženo: 14:27</h3>
