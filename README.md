@@ -1,7 +1,7 @@
 
 <h1>Stoni tenis SOTEX rezervacije</h1>
 
-<img src="assets/checkmark.png" height="48px" />
+<img src="assets/cross.png" height="48px" />
 
 <table>
     <thead>
@@ -11,10 +11,15 @@
         <th>Igrači</th>
     </thead>
     <tbody><tr>
+            <td>07:30:00</td>
+            <td>08:00:00</td>
+            <td>sotnikola</td>
+            <td>Mili, Neco</td>
+        </tr><tr>
             <td>08:00:00</td>
             <td>08:30:00</td>
             <td>sotnikola</td>
             <td>Mili, Neca</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 07:32</h3>
+<h3>Poslednji put osveženo: 07:33</h3>
