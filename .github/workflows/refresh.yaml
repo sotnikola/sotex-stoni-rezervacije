@@ -5,7 +5,7 @@ on:
 
 jobs:
   run-script:
-    runs-on: self-hosted
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout code
@@ -17,7 +17,7 @@ jobs:
         python-version: 3.8  # Choose your desired Python version
 
     - name: Run Python Script
-      run: python refresher.py
+      run: IN_CI=1 python refresher.py
       
     - name: Commit & Push changes
       uses: actions-js/push@master
