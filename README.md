@@ -21,10 +21,15 @@
             <td>sotnikola</td>
             <td>Mili, Neca</td>
         </tr><tr>
+            <td>12:00:00</td>
+            <td>12:30:00</td>
+            <td>sotnikola</td>
+            <td>Mili, Lemxra</td>
+        </tr><tr>
             <td>16:00:00</td>
             <td>16:30:00</td>
             <td>sotnikola</td>
             <td>Mili, Swelja</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 08:41</h3>
+<h3>Poslednji put osveženo: 08:45</h3>
