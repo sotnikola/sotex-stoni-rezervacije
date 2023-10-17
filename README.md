@@ -1,7 +1,7 @@
 
 <h1>Stoni tenis SOTEX rezervacije</h1>
 
-<img src="assets/checkmark.png" height="48px" />
+<img src="assets/cross.png" height="48px" />
 
 <table>
     <thead>
@@ -42,4 +42,4 @@
             <td>Mili, Swelja</td>
         </tr></tbody>
 </table>
-<h3>Poslednji put osveženo: 14:57</h3>
+<h3>Poslednji put osveženo: 15:02</h3>
